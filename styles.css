@@ -111,6 +111,12 @@ section.block{padding-top:72px;padding-bottom:72px}
 .quote button{justify-self:start}
 .hidden-field{display:none}
 
+/* Areas */
+.areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.areas article{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.areas h3{font-size:28px}
+.areas p{margin:0;font-size:15px;line-height:1.6;color:var(--ink-2)}
+
 /* Instagram */
 .ig-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
 #instagram{padding-top:48px;padding-bottom:48px}
