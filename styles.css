@@ -110,6 +110,18 @@ section.block{padding-top:72px;padding-bottom:72px}
 .quote button{justify-self:start}
 .hidden-field{display:none}
 
+/* Instagram */
+.ig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.ig-card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:24px;display:flex;flex-direction:column;gap:18px}
+.ig-head{display:flex;align-items:center;gap:12px;color:var(--brass)}
+.ig-head div{display:flex;flex-direction:column}
+.ig-head strong{color:var(--ink);font-size:17px}
+.ig-head span{font-size:14px;color:var(--muted)}
+.ig-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ig-photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;transition:opacity .2s}
+.ig-photos:hover img{opacity:.85}
+.ig-card .btn{align-self:flex-start}
+
 /* Footer */
 .site-footer{background:var(--wine-deep);color:#D9CCBF;font-size:14px;line-height:1.7}
 .site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding-top:40px;padding-bottom:40px}
