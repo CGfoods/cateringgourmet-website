@@ -162,4 +162,4 @@ section.block{padding-top:72px;padding-bottom:72px}
 .reel .eyebrow{color:var(--gold)}
 .reel .btn{align-self:flex-start;background:#fff;color:#141414}
 .reel .btn:hover{background:var(--gold);color:#141414;box-shadow:none}
-@media (prefers-reduced-motion:reduce){.reel video{display:none}.reel{background:#0E0E0E url(images/events-reel-poster.jpg) center/cover}}
+@media (prefers-reduced-motion:reduce){.reel video{display:none}.reel{background:#0E0E0E url(images/events-reel-poster.webp) center/cover}}
