@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/wedding-toast-800.webp" imagesrcset="images/wedding-toast-800.webp 800w, images/wedding-toast.webp 2000w" imagesizes="100vw" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -64,7 +65,7 @@
 
 <main id="top">
   <section class="hero">
-    <img class="hero-bg" src="images/wedding-toast.jpg" alt="Wedding guests raising a toast with the bride and groom at the head table" width="2000" height="1333" fetchpriority="high">
+    <img class="hero-bg" src="images/wedding-toast.webp" srcset="images/wedding-toast-800.webp 800w, images/wedding-toast.webp 2000w" sizes="100vw" alt="Wedding guests raising a toast with the bride and groom at the head table" width="2000" height="1333" fetchpriority="high">
     <div class="wrap hero-text">
       <span class="eyebrow">Armenian &middot; Canadian &middot; Ukrainian &middot; Russian</span>
       <h1>Generous Old-World feasts, catered for your celebration</h1>
@@ -87,8 +88,7 @@
   </section>
 
   <section class="reel" aria-label="Our events">
-    <video autoplay muted loop playsinline preload="metadata" poster="images/events-reel-poster.jpg" aria-hidden="true">
-      <source src="images/events-reel.mp4" type="video/mp4">
+    <video muted loop playsinline preload="none" poster="images/events-reel-poster.webp" aria-hidden="true" data-src="images/events-reel.mp4">
     </video>
     <div class="wrap">
       <span class="eyebrow">Weddings &middot; Anniversaries &middot; Celebrations</span>
@@ -105,7 +105,7 @@
     </div>
     <div class="cards">
       <article class="card">
-        <div class="photo"><img src="images/wedding-reception.jpg" alt="Wedding reception table set with appetizers, blush napkins and gold chairs" width="870" height="768" loading="lazy"></div>
+        <div class="photo"><img src="images/wedding-reception.webp" srcset="images/wedding-reception-800.webp 800w, images/wedding-reception.webp 870w" sizes="(max-width: 700px) 100vw, 400px" alt="Wedding reception table set with appetizers, blush napkins and gold chairs" width="870" height="768" loading="lazy"></div>
         <div class="card-body">
           <h3>Full-service events</h3>
           <p>Weddings, anniversaries and banquets with servers, setup, buffet or plated service, and cleanup.</p>
@@ -113,7 +113,7 @@
         </div>
       </article>
       <article class="card">
-        <div class="photo"><img src="images/antipasto-buffet.jpg" alt="Antipasto buffet with grilled vegetables, olives, cheeses and cured meats" width="1400" height="933" loading="lazy"></div>
+        <div class="photo"><img src="images/antipasto-buffet.webp" srcset="images/antipasto-buffet-800.webp 800w, images/antipasto-buffet.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Antipasto buffet with grilled vegetables, olives, cheeses and cured meats" width="1400" height="933" loading="lazy"></div>
         <div class="card-body">
           <h3>Drop-off catering</h3>
           <p>Ready-to-serve trays delivered hot or chilled to your home or venue. No staff, no fuss.</p>
@@ -121,7 +121,7 @@
         </div>
       </article>
       <article class="card">
-        <div class="photo"><img src="images/candlelit-dinner.jpg" alt="Guests at a long candlelit dinner table with roses" width="1400" height="933" loading="lazy" style="object-position:45% 40%"></div>
+        <div class="photo"><img src="images/candlelit-dinner.webp" srcset="images/candlelit-dinner-800.webp 800w, images/candlelit-dinner.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Guests at a long candlelit dinner table with roses" width="1400" height="933" loading="lazy" style="object-position:45% 40%"></div>
         <div class="card-body">
           <h3>Corporate catering</h3>
           <p>Office lunches, meetings and holiday parties, with easy menus and invoicing for your company.</p>
@@ -228,13 +228,12 @@
   <section id="gallery" class="wrap block">
     <div class="section-head"><h2>From our recent events</h2></div>
     <div class="gallery">
-      <div class="photo"><img src="images/suckling-pig-sparklers.jpg" alt="Servers presenting a roast suckling pig with sparklers" width="1365" height="768" loading="lazy"></div>
-      <div class="photo"><img src="images/roast-suckling-pig.jpg" alt="Whole roast suckling pig surrounded by salads and appetizers" width="1400" height="933" loading="lazy"></div>
-      <div class="photo"><img src="images/plated-service-tray.jpg" alt="Tray of plated chicken dinners ready to be served" width="1400" height="933" loading="lazy"></div>
-      <div class="photo"><img src="images/family-style-zakuski.jpg" alt="Platters of smoked salmon, blini with red caviar, salads and shrimp cocktail" width="1400" height="1010" loading="lazy"></div>
-      <div class="photo"><img src="images/banquet-table.jpg" alt="Banquet table with a whole sturgeon in aspic, shrimp cocktails and smoked fish" width="1600" height="1066" loading="lazy"></div>
-      <!--<div class="photo"><img src="images/banquet-table-tall.jpg" alt="Banquet table with a whole sturgeon centrepiece" width="1000" height="1500" loading="lazy" style="object-position:center 40%"></div>-->
-      <div class="photo"><img src="images/carving-station.jpg" alt="Chef serving at a buffet carving station in a chandelier-lit banquet hall" width="1400" height="933" loading="lazy"></div>
+      <div class="photo"><img src="images/suckling-pig-sparklers.webp" srcset="images/suckling-pig-sparklers-800.webp 800w, images/suckling-pig-sparklers.webp 1365w" sizes="(max-width: 700px) 100vw, 400px" alt="Servers presenting a roast suckling pig with sparklers" width="1365" height="768" loading="lazy"></div>
+      <div class="photo"><img src="images/roast-suckling-pig.webp" srcset="images/roast-suckling-pig-800.webp 800w, images/roast-suckling-pig.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Whole roast suckling pig surrounded by salads and appetizers" width="1400" height="933" loading="lazy"></div>
+      <div class="photo"><img src="images/plated-service-tray.webp" srcset="images/plated-service-tray-800.webp 800w, images/plated-service-tray.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Tray of plated chicken dinners ready to be served" width="1400" height="933" loading="lazy"></div>
+      <div class="photo"><img src="images/family-style-zakuski.webp" srcset="images/family-style-zakuski-800.webp 800w, images/family-style-zakuski.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Platters of smoked salmon, blini with red caviar, salads and shrimp cocktail" width="1400" height="1010" loading="lazy"></div>
+      <div class="photo"><img src="images/banquet-table.webp" srcset="images/banquet-table-800.webp 800w, images/banquet-table.webp 1600w" sizes="(max-width: 700px) 100vw, 400px" alt="Banquet table with a whole sturgeon in aspic, shrimp cocktails and smoked fish" width="1600" height="1066" loading="lazy"></div>
+      <div class="photo"><img src="images/carving-station.webp" srcset="images/carving-station-800.webp 800w, images/carving-station.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Chef serving at a buffet carving station in a chandelier-lit banquet hall" width="1400" height="933" loading="lazy"></div>
     </div>
     <!-- Add a real client review here when you have one:
     <figure class="review">
@@ -332,6 +331,14 @@
   });
   show(tabs[0]);
   document.getElementById('year').textContent = new Date().getFullYear();
+  var v = document.querySelector('.reel video');
+  var conn = navigator.connection || {};
+  var still = conn.saveData || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (v && !still && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function(entries, obs){
+      if (entries[0].isIntersecting) { v.src = v.dataset.src; v.play().catch(function(){}); obs.disconnect(); }
+    }, { rootMargin: '0px' }).observe(v);
+  }
 })();
 </script>
 </body>
