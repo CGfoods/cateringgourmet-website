@@ -187,7 +187,7 @@ section.block{padding-top:72px;padding-bottom:72px}
 @media (prefers-reduced-motion:reduce){.reel video{display:none}.reel{background:#0E0E0E url(images/events-reel-poster.webp) center/cover}}
 
 /* ===== Gold theme ===== */
-.btn,.nav .btn,.hero .btn,.reel .btn{background:var(--gold-grad);color:#1E1810;box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 2px 8px rgba(140,106,42,.25)}
+.btn,.nav .btn,.hero .btn,.reel .btn,.lux .btn{background:var(--gold-grad);color:#1E1810;box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 2px 8px rgba(140,106,42,.25)}
 .btn:hover,.nav .btn:hover,.hero .btn:hover,.reel .btn:hover{background:linear-gradient(135deg,#F5E2A8 0%,#DDBA6C 45%,#BE9445 100%);color:#1E1810;box-shadow:0 2px 12px rgba(140,106,42,.35)}
 .btn-outline{background:transparent;color:#6E5320;border:1.5px solid #B48A3C;box-shadow:none}
 .btn-outline:hover{background:var(--gold-grad);color:#1E1810}
