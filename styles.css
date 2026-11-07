@@ -26,7 +26,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;color:var(--wine-dark);margin:
 .site-header{border-bottom:1px solid var(--line);background:var(--ground);position:sticky;top:0;z-index:10}
 .site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:16px}
 .logo{text-decoration:none;color:var(--wine);display:flex;flex-direction:column}
-.logo img{height:70px;width:auto}
+.logo img{height:100px;width:auto}
+.footer-logo{height:150px;width:auto;margin-bottom:12px}
 .logo strong{font-family:var(--serif);font-size:28px;line-height:1}
 .logo span{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:4px}
 .nav{display:flex;flex-wrap:wrap;align-items:center;gap:20px;font-size:15px}
@@ -167,6 +168,7 @@ section.block{padding-top:72px;padding-bottom:72px}
 
 @media (max-width:640px){
   .site-header{position:static}
+  .logo img{height:84px}
   .nav{gap:4px 14px;font-size:14px}
   .nav a:not(.btn){padding:10px 0}
   .hero::after{background:rgba(10,10,10,.62)}
