@@ -133,6 +133,16 @@ section.block{padding-top:72px;padding-bottom:72px}
 .quote button{justify-self:start}
 .hidden-field{display:none}
 
+/* Family of businesses */
+.family{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.family article{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:12px}
+.family h3{font-size:32px}
+.family p{margin:0;font-size:15px;line-height:1.6;color:var(--ink-2)}
+.family ul{margin:0;padding:0;list-style:none}
+.family li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.family li span{color:var(--ink-2);text-align:right}
+.family .btn{align-self:flex-start;margin-top:auto}
+
 /* Areas */
 .areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
 .areas article{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:24px;display:flex;flex-direction:column;gap:8px}
