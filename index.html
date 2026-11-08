@@ -14,10 +14,9 @@
 <meta property="og:description" content="Armenian, Canadian, Ukrainian and Russian catering for weddings, parties and offices in Mississauga, Etobicoke and Toronto.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cateringgourmet.ca/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="images/wedding-toast-800.webp" imagesrcset="images/wedding-toast-800.webp 800w, images/wedding-toast.webp 2000w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" href="images/wedding-toast-800.webp" imagesrcset="images/wedding-toast-800.webp 800w, images/wedding-toast-1200.webp 1200w, images/wedding-toast.webp 2000w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin.woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -50,7 +49,7 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="#top"><img src="images/logo-gold.png" alt="Catering Gourmet – Elevated Food" width="174" height="100"></a>
+    <a class="logo" href="#top"><img src="images/logo-gold.webp" alt="Catering Gourmet – Elevated Food" width="174" height="100"></a>
     <nav class="nav" aria-label="Main">
       <a href="#luxury">Luxury home</a>
       <a href="#menus">Menus</a>
@@ -66,7 +65,7 @@
 
 <main id="top">
   <section class="hero">
-    <img class="hero-bg" src="images/wedding-toast.webp" srcset="images/wedding-toast-800.webp 800w, images/wedding-toast.webp 2000w" sizes="100vw" alt="Wedding guests raising a toast with the bride and groom at the head table" width="2000" height="1333" fetchpriority="high">
+    <img class="hero-bg" src="images/wedding-toast.webp" srcset="images/wedding-toast-800.webp 800w, images/wedding-toast-1200.webp 1200w, images/wedding-toast.webp 2000w" sizes="100vw" alt="Wedding guests raising a toast with the bride and groom at the head table" width="2000" height="1333" fetchpriority="high">
     <div class="wrap hero-text">
       <span class="eyebrow">Armenian &middot; Canadian &middot; Ukrainian &middot; Russian</span>
       <h1>Generous Old-World feasts, catered for your celebration</h1>
@@ -96,7 +95,7 @@
     </div>
     <div class="family">
       <article>
-        <img class="family-logo" src="images/crystal-grand-logo.png" alt="Crystal Grand logo" width="272" height="100" loading="lazy">
+        <img class="family-logo" src="images/crystal-grand-logo.webp" alt="Crystal Grand logo" width="272" height="100" loading="lazy">
         <span class="eyebrow">Preferred venue for weddings &amp; events</span>
         <h3 class="sr-only">Crystal Grand</h3>
         <p>A European-inspired banquet hall in Mississauga, at the same address as our kitchen on Dundas Street East. Three elegant rooms for celebrations of every size, with in-house European and Eastern European cuisine.</p>
@@ -108,7 +107,7 @@
         <a class="btn" href="https://crystalgrand.ca/" target="_blank" rel="noopener">Visit Crystal Grand</a>
       </article>
       <article>
-        <img class="family-logo" src="images/armenian-bistro-logo.png" alt="Armenian Bistro logo" width="182" height="100" loading="lazy">
+        <img class="family-logo" src="images/armenian-bistro-logo.webp" alt="Armenian Bistro logo" width="182" height="100" loading="lazy">
         <span class="eyebrow">Ontario&rsquo;s only Yerevan-style restaurant</span>
         <h3 class="sr-only">Armenian Bistro</h3>
         <p>Authentic Yerevan-style Armenian food in Etobicoke: smoky shashlik from the grill, golden chebureki, and generous platters to share. Dine in or take out.</p>
@@ -122,7 +121,7 @@
   </section>
 
   <section class="reel" aria-label="Our events">
-    <video muted loop playsinline preload="none" poster="images/events-reel-poster.webp" aria-hidden="true" data-src="images/events-reel.mp4">
+    <video muted loop playsinline preload="none" data-poster="images/events-reel-poster.webp" aria-hidden="true" data-src="images/events-reel.mp4">
     </video>
     <div class="wrap">
       <span class="eyebrow">Weddings &middot; Anniversaries &middot; Celebrations</span>
@@ -186,12 +185,12 @@
       </div>
     </div>
     <div class="wrap lux-strip">
-      <img src="images/lux-lobster.webp" alt="Butter-roasted lobster tails with green onion" width="600" height="600" loading="lazy">
-      <img src="images/lux-filet.webp" alt="Grilled filet mignon" width="600" height="600" loading="lazy">
-      <img src="images/lux-scallops.webp" alt="Seared scallop and cherry tomato skewers" width="600" height="600" loading="lazy">
-      <img src="images/lux-shrimp.webp" alt="Jumbo shrimp and zucchini skewers" width="600" height="600" loading="lazy">
-      <img src="images/lux-asparagus.webp" alt="Garlic asparagus" width="600" height="600" loading="lazy">
-      <img src="images/lux-potatoes.webp" alt="Herb-roasted potato wedges" width="600" height="600" loading="lazy">
+      <img src="images/lux-lobster-300.webp" srcset="images/lux-lobster-300.webp 300w, images/lux-lobster.webp 600w" sizes="(max-width: 800px) 33vw, 190px" alt="Butter-roasted lobster tails with green onion" width="600" height="600" loading="lazy">
+      <img src="images/lux-filet-300.webp" srcset="images/lux-filet-300.webp 300w, images/lux-filet.webp 600w" sizes="(max-width: 800px) 33vw, 190px" alt="Grilled filet mignon" width="600" height="600" loading="lazy">
+      <img src="images/lux-scallops-300.webp" srcset="images/lux-scallops-300.webp 300w, images/lux-scallops.webp 600w" sizes="(max-width: 800px) 33vw, 190px" alt="Seared scallop and cherry tomato skewers" width="600" height="600" loading="lazy">
+      <img src="images/lux-shrimp-300.webp" srcset="images/lux-shrimp-300.webp 300w, images/lux-shrimp.webp 600w" sizes="(max-width: 800px) 33vw, 190px" alt="Jumbo shrimp and zucchini skewers" width="600" height="600" loading="lazy">
+      <img src="images/lux-asparagus-300.webp" srcset="images/lux-asparagus-300.webp 300w, images/lux-asparagus.webp 600w" sizes="(max-width: 800px) 33vw, 190px" alt="Garlic asparagus" width="600" height="600" loading="lazy">
+      <img src="images/lux-potatoes-300.webp" srcset="images/lux-potatoes-300.webp 300w, images/lux-potatoes.webp 600w" sizes="(max-width: 800px) 33vw, 190px" alt="Herb-roasted potato wedges" width="600" height="600" loading="lazy">
     </div>
   </section>
 
@@ -368,7 +367,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div><img class="footer-logo" src="images/logo-gold.png" alt="Catering Gourmet" width="261" height="150" loading="lazy"><span>2110 Dundas St. East, Unit 4, Mississauga, ON</span><a href="tel:+19052772800">905-277-2800</a></div>
+    <div><img class="footer-logo" src="images/logo-gold.webp" alt="Catering Gourmet" width="261" height="150" loading="lazy"><span>2110 Dundas St. East, Unit 4, Mississauga, ON</span><a href="tel:+19052772800">905-277-2800</a></div>
     <div><strong>Service area</strong><span>Mississauga</span><span>Etobicoke</span><span>Toronto</span></div>
     <div><strong>Explore</strong><a href="#luxury">Luxury home</a><a href="#menus">Menus</a><a href="#services">Services</a><a href="#quote">Get a quote</a></div>
     <div><strong>Our family</strong><a href="https://crystalgrand.ca/" target="_blank" rel="noopener">Crystal Grand (venue)</a><a href="https://armenianbistro.ca/" target="_blank" rel="noopener">Armenian Bistro (restaurant)</a></div>
@@ -398,6 +397,12 @@
   show(tabs[0]);
   document.getElementById('year').textContent = new Date().getFullYear();
   var v = document.querySelector('.reel video');
+  function setPoster(){ if (v && !v.poster) v.poster = v.dataset.poster; }
+  if (v && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function(entries, obs){
+      if (entries[0].isIntersecting) { setPoster(); obs.disconnect(); }
+    }, { rootMargin: '600px 0px' }).observe(v);
+  } else { setPoster(); }
   var conn = navigator.connection || {};
   var still = conn.saveData || /2g|3g/.test(conn.effectiveType || "") || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (v && !still && 'IntersectionObserver' in window) {

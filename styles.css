@@ -1,3 +1,5 @@
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600 700;font-display:swap;src:url(fonts/cormorant-garamond-latin.woff2) format('woff2')}
+@font-face{font-family:Inter;font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/inter-latin.woff2) format('woff2')}
 :root{
   --ground:#FBF7EE; --paper:#FFFDF8; --sand:#F3EAD8; --photo:#EFE3CC; --line:#E4D5B8;
   --ink:#2A2216; --ink-2:#4D4232; --muted:#6B5D48;
