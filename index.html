@@ -313,7 +313,7 @@
         <input type="hidden" name="form-name" value="quote">
         <p class="hidden-field"><label>Leave this empty <input name="company-website"></label></p>
         <label>Your name<input type="text" name="name" autocomplete="name" required></label>
-        <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Phone<input type="tel" name="phone" autocomplete="tel" required inputmode="tel" placeholder="e.g. 416-555-1234" pattern="\D*(\d\D*){10,}" title="Please enter a phone number with area code, e.g. 416-555-1234"></label>
         <label>Email<input type="email" name="email" autocomplete="email" required></label>
         <label>Event date<input type="date" name="event-date"></label>
         <label>Number of guests<input type="number" name="guests" min="1"></label>
