@@ -14,7 +14,7 @@
 <meta property="og:description" content="Armenian, Canadian, Ukrainian and Russian catering for weddings, parties and offices in Mississauga, Etobicoke and Toronto.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cateringgourmet.ca/">
-<link rel="preload" as="image" href="images/wedding-toast-800.webp" imagesrcset="images/wedding-toast-800.webp 800w, images/wedding-toast-1200.webp 1200w, images/wedding-toast.webp 2000w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" href="images/wedding-toast.webp" imagesrcset="images/wedding-toast-800.webp 800w, images/wedding-toast-1200.webp 1200w, images/wedding-toast.webp 2000w" imagesizes="100vw" fetchpriority="high">
 <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin.woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
@@ -64,34 +64,52 @@
 </header>
 
 <main id="top">
-  <section class="hero">
-    <img class="hero-bg" src="images/wedding-toast.webp" srcset="images/wedding-toast-800.webp 800w, images/wedding-toast-1200.webp 1200w, images/wedding-toast.webp 2000w" sizes="100vw" alt="Wedding guests raising a toast with the bride and groom at the head table" width="2000" height="1333" fetchpriority="high">
-    <div class="wrap hero-text">
-      <span class="eyebrow">Armenian &middot; Canadian &middot; Ukrainian &middot; Russian</span>
-      <h1>Generous Old-World feasts, catered for your celebration</h1>
-      <p>From a full-service wedding banquet to a tray of pelmeni dropped off at the office, we bring home-style Eastern European cooking to events across Mississauga, Etobicoke and Toronto.</p>
+  <section class="hero" aria-label="Photos from our events">
+    <div class="slides">
+      <img class="slide is-on" src="images/wedding-toast.webp" srcset="images/wedding-toast-800.webp 800w, images/wedding-toast-1200.webp 1200w, images/wedding-toast.webp 2000w" sizes="100vw" alt="Wedding guests raising a toast with the bride and groom at the head table" width="2000" height="1333" fetchpriority="high" style="object-position:60% 35%">
+      <img class="slide" data-srcset="images/banquet-table-800.webp 800w, images/banquet-table-1200.webp 1200w, images/banquet-table.webp 1600w" sizes="100vw" alt="Banquet table with a whole sturgeon, shrimp cocktails and smoked fish" width="1600" height="1066" style="object-position:50% 50%">
+      <img class="slide" data-srcset="images/suckling-pig-sparklers-800.webp 800w, images/suckling-pig-sparklers-1200.webp 1200w, images/suckling-pig-sparklers.webp 1365w" sizes="100vw" alt="Servers presenting a roast suckling pig with sparklers" width="1365" height="768" style="object-position:50% 45%">
+      <img class="slide" data-srcset="images/family-style-zakuski-800.webp 800w, images/family-style-zakuski-1200.webp 1200w, images/family-style-zakuski.webp 1400w" sizes="100vw" alt="Platters of smoked salmon, blini with red caviar and salads" width="1400" height="1010" style="object-position:50% 50%">
+      <img class="slide" data-srcset="images/antipasto-buffet-800.webp 800w, images/antipasto-buffet-1200.webp 1200w, images/antipasto-buffet.webp 1400w" sizes="100vw" alt="Antipasto buffet with grilled vegetables, olives, cheeses and cured meats" width="1400" height="933" style="object-position:50% 50%">
+      <img class="slide" data-srcset="images/roast-suckling-pig-800.webp 800w, images/roast-suckling-pig-1200.webp 1200w, images/roast-suckling-pig.webp 1400w" sizes="100vw" alt="Whole roast suckling pig surrounded by salads and appetizers" width="1400" height="933" style="object-position:40% 50%">
+    </div>
+    <div class="dots">
+      <button type="button" aria-label="Show photo 1" aria-current="true"></button>
+      <button type="button" aria-label="Show photo 2"></button>
+      <button type="button" aria-label="Show photo 3"></button>
+      <button type="button" aria-label="Show photo 4"></button>
+      <button type="button" aria-label="Show photo 5"></button>
+      <button type="button" aria-label="Show photo 6"></button>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="wrap intro-inner">
+      <span class="eyebrow">Armenian &middot; Continental Canadian &middot; Ukrainian &middot; Russian</span>
+      <h1>Elevated catering for weddings, celebrations and corporate events</h1>
+      <p>Every dish is cooked from scratch in our Mississauga kitchen, using our own family recipes. Choose full banquet service with our team, or beautifully arranged platters delivered to your door anywhere in Mississauga, Etobicoke and Toronto.</p>
       <div class="actions">
         <a class="btn" href="#quote">Request a free quote</a>
-        <a class="btn btn-outline" href="#menus">See our menus</a>
+        <a class="btn btn-outline" href="#menus">Explore our menus</a>
       </div>
-      <span class="note">We usually reply within one business day.</span>
+      <span class="note">Call <a href="tel:+19052772800">905-277-2800</a> or send the form. We usually reply within one business day.</span>
     </div>
   </section>
 
   <section class="highlights" aria-label="Highlights">
     <div class="wrap">
-      <div><strong>Full service or drop-off</strong><span>Staff, setup and cleanup, or just the food</span></div>
-      <div><strong>Small to large events</strong><span>Intimate dinners to big banquets</span></div>
-      <div><strong>Made from scratch</strong><span>Family recipes, cooked in our kitchen</span></div>
-      <div><strong>Mississauga &amp; Toronto</strong><span>Mississauga, Etobicoke, Toronto and nearby</span></div>
+      <div><strong>Full service or drop-off</strong><span>Our servers set, serve and clear, or we deliver everything ready to serve</span></div>
+      <div><strong>From 10 guests to grand banquets</strong><span>Dinner parties at home to full wedding receptions</span></div>
+      <div><strong>Cooked from scratch</strong><span>Family recipes, prepared fresh in our own kitchen</span></div>
+      <div><strong>A menu built around you</strong><span>Mix dishes from four cuisines and plan for every dietary need</span></div>
     </div>
   </section>
 
   <section id="family" class="wrap block">
     <div class="section-head">
       <span class="eyebrow">Our family</span>
-      <h2>More from the Catering Gourmet family</h2>
-      <p>Two places where you can enjoy the same food and hospitality, from a full wedding to a dinner out.</p>
+      <h2>Part of a family of hospitality</h2>
+      <p>Catering Gourmet shares its kitchen and its standards with a banquet venue and a restaurant. Hold your whole wedding under one roof, or taste our cooking over dinner before you plan your event.</p>
     </div>
     <div class="family">
       <article>
@@ -123,25 +141,20 @@
   <section class="reel" aria-label="Our events">
     <video muted loop playsinline preload="none" data-poster="images/events-reel-poster.webp" aria-hidden="true" data-src="images/events-reel.mp4">
     </video>
-    <div class="wrap">
-      <span class="eyebrow">Weddings &middot; Anniversaries &middot; Celebrations</span>
-      <h2>From the first toast to the last dance</h2>
-      <p>We set the tables, serve every course and keep the food coming, so you and your guests can enjoy the night.</p>
-      <a class="btn" href="#quote">Plan your event</a>
-    </div>
   </section>
 
   <section id="services" class="wrap block">
     <div class="section-head">
       <span class="eyebrow">Services</span>
-      <h2>Catering that fits your event</h2>
+      <h2>Three ways to host</h2>
+      <p>Whether you want a full team on the floor or a beautiful spread on your dining table, every menu is planned with you and cooked from scratch.</p>
     </div>
     <div class="cards">
       <article class="card">
-        <div class="photo"><img src="images/wedding-reception.webp" srcset="images/wedding-reception-800.webp 800w, images/wedding-reception.webp 870w" sizes="(max-width: 700px) 100vw, 400px" alt="Wedding reception table set with appetizers, blush napkins and gold chairs" width="870" height="768" loading="lazy"></div>
+        <div class="photo"><img src="images/suckling-pig-sparklers.webp" srcset="images/suckling-pig-sparklers-800.webp 800w, images/suckling-pig-sparklers.webp 1365w" sizes="(max-width: 700px) 100vw, 400px" alt="Two servers presenting a roast suckling pig with sparklers at a banquet" width="1365" height="768" loading="lazy" style="object-position:50% 40%"></div>
         <div class="card-body">
           <h3>Full-service events</h3>
-          <p>Weddings, anniversaries and banquets with servers, setup, buffet or plated service, and cleanup.</p>
+          <p>Weddings, anniversaries, christenings and banquets. We plan the menu, set up, serve buffet or plated courses with our professional staff, and clear away afterwards, so you can stay with your guests from the first toast to the last dance.</p>
           <span class="ideal">Best for 50+ guests</span>
         </div>
       </article>
@@ -149,7 +162,7 @@
         <div class="photo"><img src="images/antipasto-buffet.webp" srcset="images/antipasto-buffet-800.webp 800w, images/antipasto-buffet.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Antipasto buffet with grilled vegetables, olives, cheeses and cured meats" width="1400" height="933" loading="lazy"></div>
         <div class="card-body">
           <h3>Drop-off catering</h3>
-          <p>Ready-to-serve trays delivered hot or chilled to your home or venue. No staff, no fuss. Ask about our <a href="#luxury">luxury home menu</a> with lobster and filet mignon.</p>
+          <p>Generous platters delivered hot or chilled to your home, office or venue, arranged to go straight onto the table. For a special occasion, see our <a href="#luxury">luxury home menu</a> with lobster and filet mignon.</p>
           <span class="ideal">Best for parties and family gatherings</span>
         </div>
       </article>
@@ -157,7 +170,7 @@
         <div class="photo"><img src="images/candlelit-dinner.webp" srcset="images/candlelit-dinner-800.webp 800w, images/candlelit-dinner.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Guests at a long candlelit dinner table with roses" width="1400" height="933" loading="lazy" style="object-position:45% 40%"></div>
         <div class="card-body">
           <h3>Corporate catering</h3>
-          <p>Office lunches, meetings and holiday parties, with easy menus and invoicing for your company.</p>
+          <p>Working lunches, client meetings, launches and holiday parties. Clear menus, on-time delivery and simple invoicing for your company.</p>
           <span class="ideal">Best for teams and company events</span>
         </div>
       </article>
@@ -172,7 +185,7 @@
       <div class="lux-text">
         <span class="eyebrow">Luxury home catering</span>
         <h2>A restaurant-quality feast, delivered to your home</h2>
-        <p>Hosting at home without the stress. We cook, plate everything on elegant serving platters and deliver it ready to enjoy. Perfect for birthdays, anniversaries, holidays and dinner parties.</p>
+        <p>Host a dinner your guests will talk about, without spending the evening in the kitchen. We cook, arrange everything on elegant serving platters and deliver it ready to enjoy. Made for birthdays, anniversaries, holidays and dinner parties.</p>
         <ul class="lux-menu">
           <li><strong>Butter-roasted lobster tails</strong><span>with herbs and green onion</span></li>
           <li><strong>Grilled filet mignon</strong><span>herb-marinated, chargrilled</span></li>
@@ -198,7 +211,7 @@
     <div class="section-head">
       <span class="eyebrow">Our kitchens</span>
       <h2>Four cuisines, one table</h2>
-      <p>Mix and match dishes from any of our menus. Choose a cuisine to see a few favourites.</p>
+      <p>Combine dishes from any of our kitchens to build a menu that feels like your own family&rsquo;s table. Choose a cuisine to see a few favourites.</p>
     </div>
     <div class="tabs" role="tablist" aria-label="Cuisines">
       <button class="tab" role="tab" id="tab-armenian" aria-controls="p-armenian" aria-selected="true">Armenian</button>
@@ -289,15 +302,25 @@
   </section>
 
   <section id="gallery" class="wrap block">
-    <div class="section-head"><h2>From our recent events</h2></div>
-    <div class="gallery">
-      <div class="photo"><img src="images/suckling-pig-sparklers.webp" srcset="images/suckling-pig-sparklers-800.webp 800w, images/suckling-pig-sparklers.webp 1365w" sizes="(max-width: 700px) 100vw, 400px" alt="Servers presenting a roast suckling pig with sparklers" width="1365" height="768" loading="lazy"></div>
-      <div class="photo"><img src="images/roast-suckling-pig.webp" srcset="images/roast-suckling-pig-800.webp 800w, images/roast-suckling-pig.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Whole roast suckling pig surrounded by salads and appetizers" width="1400" height="933" loading="lazy"></div>
-      <div class="photo"><img src="images/plated-service-tray.webp" srcset="images/plated-service-tray-800.webp 800w, images/plated-service-tray.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Tray of plated chicken dinners ready to be served" width="1400" height="933" loading="lazy"></div>
-      <div class="photo"><img src="images/family-style-zakuski.webp" srcset="images/family-style-zakuski-800.webp 800w, images/family-style-zakuski.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Platters of smoked salmon, blini with red caviar, salads and shrimp cocktail" width="1400" height="1010" loading="lazy"></div>
-      <div class="photo"><img src="images/banquet-table.webp" srcset="images/banquet-table-800.webp 800w, images/banquet-table.webp 1600w" sizes="(max-width: 700px) 100vw, 400px" alt="Banquet table with a whole sturgeon in aspic, shrimp cocktails and smoked fish" width="1600" height="1066" loading="lazy"></div>
-      <div class="photo"><img src="images/carving-station.webp" srcset="images/carving-station-800.webp 800w, images/carving-station.webp 1400w" sizes="(max-width: 700px) 100vw, 400px" alt="Chef serving at a buffet carving station in a chandelier-lit banquet hall" width="1400" height="933" loading="lazy"></div>
+    <div class="section-head">
+      <span class="eyebrow">Gallery</span>
+      <h2>From our recent events</h2>
+      <p>Tap any photo to see it full size.</p>
     </div>
+    <div class="gallery">
+      <button type="button" class="photo" data-full="images/suckling-pig-sparklers.webp" aria-label="View larger: Servers presenting a roast suckling pig with sparklers"><img src="images/suckling-pig-sparklers.webp" srcset="images/suckling-pig-sparklers-800.webp 800w, images/suckling-pig-sparklers.webp 1365w" sizes="(max-width: 700px) 100vw, 580px" alt="Servers presenting a roast suckling pig with sparklers" width="1365" height="768" loading="lazy"></button>
+      <button type="button" class="photo" data-full="images/roast-suckling-pig.webp" aria-label="View larger: Whole roast suckling pig surrounded by salads and appetizers"><img src="images/roast-suckling-pig.webp" srcset="images/roast-suckling-pig-800.webp 800w, images/roast-suckling-pig.webp 1400w" sizes="(max-width: 700px) 100vw, 580px" alt="Whole roast suckling pig surrounded by salads and appetizers" width="1400" height="933" loading="lazy"></button>
+      <button type="button" class="photo" data-full="images/plated-service-tray.webp" aria-label="View larger: Tray of plated chicken dinners ready to be served"><img src="images/plated-service-tray.webp" srcset="images/plated-service-tray-800.webp 800w, images/plated-service-tray.webp 1400w" sizes="(max-width: 700px) 100vw, 580px" alt="Tray of plated chicken dinners ready to be served" width="1400" height="933" loading="lazy"></button>
+      <button type="button" class="photo" data-full="images/family-style-zakuski.webp" aria-label="View larger: Platters of smoked salmon, blini with red caviar, salads and shrimp cocktail"><img src="images/family-style-zakuski.webp" srcset="images/family-style-zakuski-800.webp 800w, images/family-style-zakuski.webp 1400w" sizes="(max-width: 700px) 100vw, 580px" alt="Platters of smoked salmon, blini with red caviar, salads and shrimp cocktail" width="1400" height="1010" loading="lazy"></button>
+      <button type="button" class="photo" data-full="images/banquet-table.webp" aria-label="View larger: Banquet table with a whole sturgeon in aspic, shrimp cocktails and smoked fish"><img src="images/banquet-table.webp" srcset="images/banquet-table-800.webp 800w, images/banquet-table.webp 1600w" sizes="(max-width: 700px) 100vw, 580px" alt="Banquet table with a whole sturgeon in aspic, shrimp cocktails and smoked fish" width="1600" height="1066" loading="lazy"></button>
+      <button type="button" class="photo" data-full="images/carving-station.webp" aria-label="View larger: Chef serving at a buffet carving station in a chandelier-lit banquet hall"><img src="images/carving-station.webp" srcset="images/carving-station-800.webp 800w, images/carving-station.webp 1400w" sizes="(max-width: 700px) 100vw, 580px" alt="Chef serving at a buffet carving station in a chandelier-lit banquet hall" width="1400" height="933" loading="lazy"></button>
+    </div>
+    <dialog class="lightbox" aria-label="Photo viewer">
+      <img alt="">
+      <button type="button" class="lb-close" aria-label="Close">&times;</button>
+      <button type="button" class="lb-prev" aria-label="Previous photo">&#8249;</button>
+      <button type="button" class="lb-next" aria-label="Next photo">&#8250;</button>
+    </dialog>
     <!-- Add a real client review here when you have one:
     <figure class="review">
       <blockquote>Review text</blockquote>
@@ -338,7 +361,7 @@
     <div class="wrap">
       <div class="quote-intro">
         <h2>Request a free quote</h2>
-        <p>Tell us a little about your event and we'll come back with menu ideas and a price.</p>
+        <p>Share a few details about your event and we&rsquo;ll come back with menu ideas, service options and a clear price. There&rsquo;s no obligation.</p>
         <span>Prefer to talk? Call <a href="tel:+19052772800">905-277-2800</a></span>
       </div>
       <form name="quote" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="company-website">
@@ -410,6 +433,55 @@
       if (entries[0].isIntersecting) { v.src = v.dataset.src; v.play().catch(function(){}); obs.disconnect(); }
     }, { rootMargin: '0px' }).observe(v);
   }
+  // Hero slideshow
+  var slides = document.querySelectorAll('.hero .slide');
+  var dots = document.querySelectorAll('.hero .dots button');
+  var cur = 0, timer = null;
+  var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function prep(img){ if (img.dataset.srcset) { img.srcset = img.dataset.srcset; img.removeAttribute('data-srcset'); } }
+  function go(n){
+    n = (n + slides.length) % slides.length;
+    prep(slides[n]); prep(slides[(n + 1) % slides.length]);
+    slides[cur].classList.remove('is-on'); dots[cur].removeAttribute('aria-current');
+    cur = n;
+    slides[cur].classList.add('is-on'); dots[cur].setAttribute('aria-current', 'true');
+  }
+  function play(){ if (!calm && slides.length > 1) { clearInterval(timer); timer = setInterval(function(){ go(cur + 1); }, 5000); } }
+  dots.forEach(function(d, i){ d.addEventListener('click', function(){ go(i); play(); }); });
+  window.addEventListener('load', function(){ if (slides[1]) prep(slides[1]); play(); });
+  document.addEventListener('visibilitychange', function(){ if (document.hidden) clearInterval(timer); else play(); });
+
+  // Gallery lightbox
+  var lb = document.querySelector('.lightbox');
+  var pics = Array.prototype.slice.call(document.querySelectorAll('.gallery .photo'));
+  var at = 0;
+  function openPic(i){
+    at = (i + pics.length) % pics.length;
+    var src = pics[at].querySelector('img');
+    lb.querySelector('img').src = pics[at].dataset.full;
+    lb.querySelector('img').alt = src.alt;
+    if (!lb.open) { if (lb.showModal) lb.showModal(); else lb.setAttribute('open', ''); }
+  }
+  function closePic(){ if (lb.close) lb.close(); else lb.removeAttribute('open'); }
+  if (lb) {
+    pics.forEach(function(p, i){ p.addEventListener('click', function(){ openPic(i); }); });
+    lb.querySelector('.lb-close').addEventListener('click', closePic);
+    lb.querySelector('.lb-prev').addEventListener('click', function(){ openPic(at - 1); });
+    lb.querySelector('.lb-next').addEventListener('click', function(){ openPic(at + 1); });
+    lb.addEventListener('click', function(e){ if (e.target === lb) closePic(); });
+    lb.addEventListener('keydown', function(e){
+      if (e.key === 'ArrowRight') openPic(at + 1);
+      if (e.key === 'ArrowLeft') openPic(at - 1);
+    });
+    var x0 = null;
+    lb.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, { passive: true });
+    lb.addEventListener('touchend', function(e){
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 50) openPic(at + (dx < 0 ? 1 : -1));
+    });
+  }
+
   var ig = document.getElementById('instagram');
   var frames = ig ? ig.querySelectorAll('iframe[data-src]') : [];
   function loadIg(){ frames.forEach(function(f){ f.src = f.dataset.src; }); }
